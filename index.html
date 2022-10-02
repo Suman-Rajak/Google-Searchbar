@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <img id="dots"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/9dots.svg/1024px-9dots.svg.png" alt="">
+            <img id="person"
+                src="https://lh3.googleusercontent.com/ogw/AOh-ky1jGeT0lKCRRs614bMFrcm8fw3BIzfcOXQ1PT6YqA=s32-c-mo"
+                alt="">
+        </div>
+    </nav>
+    <div class="p">
+        <div class="image">
+            <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+                alt="">
+        </div>
+        <div class="searchbar">
+            <ion-icon name="search" id="search"></ion-icon><input type="text" value="" title="Search" class="info"><img
+                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" id="mic" alt="">
+        </div>
+        <div class="buttons">
+            <button class="search">Google Search</button>
+            <a href="https://www.google.com/doodles"><button>I'm Feeling Lucky</button></a>
+        </div>
+        <div class="language">
+            <p>Google offered in: </p>
+            <a href="">हिन्दी</a>
+            <a href="">বাংলা</a>
+            <a href="">తెలుగు</a>
+            <a href="">मराठी</a>
+            <a href="">தமிழ்</a>
+            <a href="">ગુજરાતી</a>
+            <a href="">ಕನ್ನಡ</a>
+            <a href="">മലയാളം</a>
+            <a href="">ਪੰਜਾਬੀ</a>
+        </div>
+        <div class="footers">
+            <div class="upperfooter">
+                <p>India</p>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search Works</a>
+                </div>
+                <div class="right">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let info = document.querySelector('.info');
+        let search = document.querySelector('.search');
+
+        search.onclick = function(){
+            let url='https://www.google.com/search?q='+info.value;
+            window.open(url,'_self');
+        }
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

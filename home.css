@@ -186,7 +186,8 @@ input {
 
     width: 100%;
 }
-.footers{
+
+.footers {
     height: 3rem;
     width: 100%;
     margin: 1.8rem 0 1.8rem 1rem;
@@ -200,10 +201,154 @@ input {
     bottom: 0;
     width: 100%;
 }
-.upperfooter{
+
+.upperfooter {
     display: flex;
     align-self: flex-start;
     color: rgb(168, 167, 167);
     font-size: .85rem;
     /* justify-self:flex-start; */
+}
+
+@media screen and (max-width: 780px) {
+
+    .left a,
+    .right a {
+        font-size: .55rem;
+    }
+}
+
+@media screen and (max-width: 602px) {
+
+    input {
+        width: 29rem;
+    }
+
+    .language a {
+        font-size: .5rem;
+    }
+
+    .language p {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .left a,
+    .right a {
+        font-size: .5rem;
+    }
+
+    .footer,
+    .upperfooter {
+        display: none;
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 540px) {
+    input {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    input {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    input {
+        width: 20rem;
+    }
+
+    .language p {
+        font-size: .55rem;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+    input {
+        width: 18rem;
+    }
+
+    .language p {
+        font-size: .5rem;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    input {
+        width: 16rem;
+    }
+
+    .language p {
+        display: none;
+    }
+
+    .language a {
+        font-size: .4rem;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    input {
+        width: 14rem;
+    }
+
+    .buttons button {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .language p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    input {
+        width: 12rem;
+    }
+
+    .buttons button {
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .language p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    input {
+        width: 10rem;
+    }
+
+    .buttons button {
+       
+        font-size: .6rem;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .language p {
+        display: none;
+    }
 }
